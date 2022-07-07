@@ -1,0 +1,41 @@
+Take following from the users:
+
+1. firstname
+2. lastname
+3. DOB
+4. email
+5. phone
+6. course
+7. category
+
+
+######################################
+
+Database Schema:
+
+id
+firstname
+lastname
+DOB
+email
+phone
+course
+category
+date
+refrence_id
+
+
+###########################
+
+DATABASE QUERY:
+
+CREATE TABLE registration_form (
+	id int not null PRIMARY KEY AUTO_INCREMENT,
+    firstname VARCHAR(50) not null,
+    lastname VARCHAR(50) not null,
+    email VARCHAR(255) not null,
+    phone VARCHAR(50)  not null,
+    course VARCHAR(150) not null,
+    category VARCHAR(200) not null,
+    date_joined VARCHAR(150) not null
+);
